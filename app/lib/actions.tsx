@@ -2,6 +2,7 @@
 
 import fs from "fs";
 import os from "os";
+import { Question } from "@/app/lib/model";
 
 export async function getServerIP() {
   const interfaces = os.networkInterfaces();
@@ -17,8 +18,8 @@ export async function getServerIP() {
 
 export async function getQuestions() {
     const data = fs.readFileSync("public/questions.json", "utf8");
-    const questions = JSON.parse(data);
-    return questions.map((q: any) => ({
+    const questions: Question[] = JSON.parse(data);
+    return questions.map((q: Question) => ({
       id: q.id,
       question: q.question,
       choices: q.choices,

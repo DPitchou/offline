@@ -1,9 +1,8 @@
 "use client";
 
-import { createContext, use, useContext, useEffect, useRef, useState } from "react";
+import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { Player, Question } from "@/app/lib/model";
 import { useRouter } from "next/navigation";
-import { revalidatePath } from "next/cache";
 
 interface WebSocketContextType {
   ws: WebSocket | null;
@@ -93,7 +92,7 @@ export const WebSocketProvider = ({ children }: { children: React.ReactNode }) =
     return () => {
       ws.current?.close();
     };
-  }, []);
+  }, [router]);
 
   useEffect(() => {
     console.log("Players updated:", players);

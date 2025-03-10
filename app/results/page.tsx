@@ -5,7 +5,7 @@ import { useWebSocket } from "@/app/context/WebSocketContext";
 
 export default function Results() {
 
-    const {ws, players} = useWebSocket() || {};
+    const {players} = useWebSocket() || {};
 
     const scoreBoard = Object.values(players || {}).sort((a, b) => b.score - a.score);
 
@@ -26,7 +26,7 @@ export default function Results() {
             </ul>
             </div>
             <div className="w-full max-w-6x p-4 flex text-center font-semibold items-center justify-center text-3xl text-white md:hidden h-full">
-                Regardez les résultats à l'écran ...
+                Regardez les résultats à l&apos;écran ...
             </div>
         </div>
 

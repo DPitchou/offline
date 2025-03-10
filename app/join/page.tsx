@@ -1,15 +1,12 @@
 'use client';
 
 import { jaro } from "@/app/ui/font";
-import { use, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { Player } from "@/app/lib/model";
-import { useEffect, useRef } from "react";
 import { useWebSocket } from "@/app/context/WebSocketContext";
 
 export default function Join() {
   const [pseudo, setPseudo] = useState('');
-  const router = useRouter();
   const {ws} = useWebSocket() || {};
 
   

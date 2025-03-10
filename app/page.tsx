@@ -6,10 +6,10 @@ import { jaro } from '@/app/ui/font';
 import { useState, useEffect, Suspense } from 'react';
 import { getQuestions } from "@/app/lib/actions";
 import { useWebSocket } from "@/app/context/WebSocketContext";
+import { Question } from "@/app/lib/model";
 
 export default function Home() {
-  const [questions, setQuestions] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [questions, setQuestions] = useState<Question[]>([]);
 
   const provider = useWebSocket();
   const ws = provider?.ws;
@@ -22,10 +22,8 @@ export default function Home() {
       try {
         const fetchedQuestions = await getQuestions();
         setQuestions(fetchedQuestions);
-        setLoading(false);
       } catch (error) {
         console.error('Error fetching questions:', error);
-        setLoading(false);
       }
     };
     fetchQuestions();

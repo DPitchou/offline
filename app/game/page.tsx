@@ -1,7 +1,7 @@
 'use client';
 
 import { useWebSocket } from "@/app/context/WebSocketContext";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import clsx from 'clsx';
 
 
