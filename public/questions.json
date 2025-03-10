@@ -1,20 +1,57 @@
 [
     {
       "id": 1,
-      "question": "Quel est le plus grand océan du monde ?",
-      "choices": ["Atlantique", "Pacifique", "Indien", "Arctique"],
-      "answer": "Pacifique"
+      "question": "Situer l’EAM Jacques MONDAIN MONVAL sur cette carte de France",
+      "choices": ["1", "2", "3", "4"],
+      "answer": "2"
     },
     {
       "id": 2,
-      "question": "Qui a peint la Joconde ?",
-      "choices": ["Van Gogh", "Picasso", "Da Vinci", "Rembrandt"],
-      "answer": "Da Vinci"
+      "question": "La situation géographique de l’EAM Jacques MONDAIN MONVAL représente-t-elle une contrainte ?",
+      "choices": ["Oui", "Non", "Les deux", "Je ne sais pas"],
+      "answer": "Les deux"
     },
     {
       "id": 3,
-      "question": "Quelle est la capitale de la France ?",
-      "choices": ["Berlin", "Madrid", "Paris", "Rome"],
-      "answer": "Paris"
+      "question": "Combien d’unités composent l’EAM Jacques MONDAIN MONVAL ?",
+      "choices": ["3", "6", "2", "9"],
+      "answer": "3"
+    },
+    {
+      "id": 4,
+      "question": "Quel est le nombre de femmes accueillies à l’EAM Jacques MONDAIN MONVAL ?",
+      "choices": ["Moins de 5", "Entre 5 et 10", "Entre 5 et 15", "Plus de 15"],
+      "answer": "Moins de 5"
+    },
+
+    {    
+      "id": 5,
+      "question": "Quel est le projet actuellement en cours de réflexion par rapport à la problématique du vieillissement des personnes accompagnées ?",
+      "choices": ["Partenariat avec habitants de Pierrefort pour devenir familles d’accueil PHV", "Partenariat avec l’EHPAD voisin", "Développer l’utilisation de protections lavables pour limiter l’impact environnemental", "Je ne sais pas"],
+      "answer": "Partenariat avec l’EHPAD voisin"
+    },
+    {
+      "id": 6,
+      "question": "Quelles sont les activités proposées par les moniteurs d’atelier de l’EAM Jacques MONDAIN MONVAL ?",
+      "choices": ["Marathon et pole dance", "Cuisine et boulangerie", "Espaces verts et menuiserie", "Programmation et impression 3D"],
+      "answer": "Espaces verts, menuiserie"
+    },
+    {
+      "id": 7,
+      "question": "Quel est cet objet, a quoi sert-il ?",
+      "choices": ["Un dé sur lequel on a oublié d’ajouter les points", "Une cale pour une table bancale", "Un jeu de boule carrée", "Un jeu d'enfant"],
+      "answer": "Un jeu de boule carrée"
+    },
+    {
+      "id": 8,
+      "question": "Combien coûte un kilo de Cantal « entre deux » ?",
+      "choices": ["9,90 €", "12,90 €", "15,90 €", "24,90€"],
+      "answer": "9,90 €"
+    },
+    {
+      "id": 9,
+      "question": "L’EAM Jacques MONDAIN MONVAL est équipé d’un outil technologique innovant, lequel ?",
+      "choices": ["REA TOUCH", "VIRTY SENS", "HANDIMELO", "Minitel"],
+      "answer": "REA TOUCH"
     }
   ]
